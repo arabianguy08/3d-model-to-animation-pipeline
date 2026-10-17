@@ -17,7 +17,7 @@ class SetupTests(unittest.TestCase):
     def setUp(self):
         self.temporary = tempfile.TemporaryDirectory(prefix="companion setup ")
         self.addCleanup(self.temporary.cleanup)
-        self.root = Path(self.temporary.name)
+        self.root = Path(self.temporary.name).resolve()
         self.environment = patch.dict(os.environ, {"COMPANION_ANIMATION_HOME": str(self.root / "user data")})
         self.environment.start()
         self.addCleanup(self.environment.stop)
