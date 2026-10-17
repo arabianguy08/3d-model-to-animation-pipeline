@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "companion-animation-pipeline"
+version = "0.1.0"
+description = "Resumable Blender character animation, GLB verification, and local MCP tools"
+requires-python = ">=3.12"
+license = "MIT"
+readme = "README.md"
+authors = [{name = "arabianguy08"}]
+dependencies = ["mcp>=1.26,<2"]
+
+[project.optional-dependencies]
+showcase = ["pillow>=11", "imageio-ffmpeg>=0.6"]
+dev = ["build>=1.2", "pyyaml>=6"]
+
+[project.urls]
+Homepage = "https://github.com/arabianguy08/companion-animation-pipeline"
+Issues = "https://github.com/arabianguy08/companion-animation-pipeline/issues"
+
+[project.scripts]
+companion-animation = "companion_animation.cli:main"
+companion-animation-mcp = "companion_animation.server:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+companion_animation = ["pipeline/*.json", "data/*.json", "skill/*.md", "skill/references/*.md"]

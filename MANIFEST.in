@@ -1,0 +1,6 @@
+include install.ps1 install.sh LICENSE
+recursive-include docs *.md *.json *.png *.gif *.mp4
+recursive-include examples *.py
+recursive-include tests *.py
+recursive-include .github/workflows *.yml
+exclude verification-*.log

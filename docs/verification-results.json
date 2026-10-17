@@ -1,0 +1,174 @@
+{
+  "date": "2026-10-17",
+  "scope": "Synthetic regression fixture and original Pip robot; no private models or target game runtime",
+  "pip": {
+    "glb_sha256": "398e1fa96656fab8e186adaa45cac0577ed99924e6ab110b94dc4413c60f1e0c",
+    "numerical_status": "pass",
+    "clean_scene_reimport": true,
+    "timings": {
+      "Idle": {
+        "duration_s": 2.0,
+        "samples": 541,
+        "events": []
+      },
+      "Cast": {
+        "duration_s": 2.0,
+        "samples": 541,
+        "events": []
+      }
+    },
+    "max_vertex_error": {
+      "Idle": 6.806308254797461e-06,
+      "Cast": 6.683116805508125e-06
+    },
+    "loop_vertex_error": {
+      "Idle": 3.1350701081131385e-17,
+      "Cast": 3.1350701081131385e-17
+    },
+    "source_motion": {
+      "Idle": 0.10459042106090428,
+      "Cast": 0.5361077218227769
+    },
+    "morphs": {
+      "PipFace": [
+        "Blink"
+      ]
+    },
+    "blink_activity": {
+      "Idle": {
+        "PipFace": {
+          "source_min_max": [
+            0.0,
+            1.0
+          ],
+          "persisted_min_max": [
+            0.0,
+            1.0
+          ],
+          "source_final": 0.0,
+          "persisted_final": 0.0,
+          "required": true
+        }
+      },
+      "Cast": {
+        "PipFace": {
+          "source_min_max": [
+            0.0,
+            1.0
+          ],
+          "persisted_min_max": [
+            0.0,
+            1.0
+          ],
+          "source_final": 0.0,
+          "persisted_final": 0.0,
+          "required": true
+        }
+      }
+    },
+    "thresholds": {
+      "max_vertex_error": 0.0001,
+      "timing_tolerance_s": 1e-06,
+      "max_loop_vertex_error": 0.0001,
+      "sample_hz": 30,
+      "max_samples_per_clip": 10000,
+      "min_motion": 1e-06
+    }
+  },
+  "regression_fixture": {
+    "glb_sha256": "4ddfbd4484ed9bd561d6602d580b15d60f0346bdba49908838f1e664f62cb7e5",
+    "numerical_status": "pass",
+    "timings": {
+      "Walk": {
+        "duration_s": 1.0083333253860474,
+        "samples": 28,
+        "events": [
+          {
+            "name": "contact",
+            "time_s": 0.24166666666666667
+          }
+        ]
+      },
+      "Held": {
+        "duration_s": 0.5166666507720947,
+        "samples": 14,
+        "events": []
+      }
+    },
+    "max_vertex_error": {
+      "Walk": 1.6284291731926797e-06,
+      "Held": 3.7814907850174666e-07
+    },
+    "loop_vertex_error": {
+      "Walk": 0.0
+    },
+    "morphs": {
+      "FixtureFace": [
+        "Blink"
+      ]
+    },
+    "blink_activity": {
+      "Walk": {
+        "FixtureFace": {
+          "source_min_max": [
+            0.0,
+            1.0
+          ],
+          "persisted_min_max": [
+            0.0,
+            1.0
+          ],
+          "source_final": 0.0,
+          "persisted_final": 0.0,
+          "required": true
+        }
+      },
+      "Held": {
+        "FixtureFace": {
+          "source_min_max": [
+            0.0,
+            1.0
+          ],
+          "persisted_min_max": [
+            0.0,
+            1.0
+          ],
+          "source_final": 1.0,
+          "persisted_final": 1.0,
+          "required": true
+        }
+      }
+    }
+  },
+  "review": {
+    "reviewer": "Codex",
+    "candidate_sha256": "398e1fa96656fab8e186adaa45cac0577ed99924e6ab110b94dc4413c60f1e0c",
+    "verdict": "pass",
+    "temporal": "Actual browser playback, both clips in oblique and side views; all 68 rendered frames inspected",
+    "face": "42 neutral/rolled front, oblique and side views; stylized LED compression only",
+    "runtime": "not_verified"
+  },
+  "showcase_media": {
+    "companion-demo.gif": {
+      "bytes": 6133324,
+      "sha256": "d92644000541e5c8f2ccba94ed6953b19dc2961db7c6cd01b0c27092ee8f15dd"
+    },
+    "companion-demo.mp4": {
+      "bytes": 97750,
+      "sha256": "4368c9cf4eab4dc8bd6950d6651662a22815805fd7a663bd422c55025315f6c7"
+    },
+    "companion-demo.png": {
+      "bytes": 264120,
+      "sha256": "d7b6655fec31d742675cce3d584d7f2cb752a502fa4e055773da70fa4e5375bf"
+    }
+  },
+  "showcase_playback": {
+    "frames": 64,
+    "duration_s": 4,
+    "mp4_size": [
+      640,
+      572
+    ],
+    "review": "Encoded MP4 played in actual browser, no media error. All 64 chronological render frames inspected."
+  }
+}

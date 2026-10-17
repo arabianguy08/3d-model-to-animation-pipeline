@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "model_id": "new_companion",
+  "workspace": "./work",
+  "blender": "blender",
+  "sources": {},
+  "normalization": {},
+  "anatomy": {
+    "mode": null,
+    "roles": {}
+  },
+  "motion": {
+    "mode": "reuse",
+    "clips": []
+  },
+  "sampling": {
+    "hz": 120
+  },
+  "face": {
+    "mode": null,
+    "blink_name": "Blink",
+    "min_blink_excursion": 0.9,
+    "probes": {
+      "enabled": true,
+      "values": [
+        0,
+        0.5,
+        0.65,
+        0.8,
+        0.9,
+        0.95,
+        1
+      ],
+      "views": [
+        "front",
+        "oblique",
+        "side"
+      ],
+      "rolled_pose_degrees": {
+        "Head": [
+          0,
+          0,
+          30
+        ],
+        "Jaw": [
+          20,
+          0,
+          0
+        ]
+      }
+    }
+  },
+  "export": {
+    "filename": "companion.glb",
+    "max_trs_residual": 1e-05
+  },
+  "certification": {
+    "max_vertex_error": 0.0001,
+    "timing_tolerance_s": 1e-06,
+    "max_loop_vertex_error": 0.0001,
+    "sample_hz": 30,
+    "max_samples_per_clip": 10000,
+    "min_motion": 1e-06
+  },
+  "preview": {
+    "resolution": 192,
+    "fps": 12,
+    "views": [
+      "oblique",
+      "side"
+    ]
+  },
+  "package": {}
+}
