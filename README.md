@@ -1,5 +1,7 @@
 # Companion Animation Pipeline
 
+[![Tests](https://github.com/arabianguy08/companion-animation-pipeline/actions/workflows/tests.yml/badge.svg)](https://github.com/arabianguy08/companion-animation-pipeline/actions/workflows/tests.yml)
+
 **Inspect → calibrate → animate → export → verify → review → package.**
 
 A standalone Blender pipeline for 3D characters and companions, with a Python

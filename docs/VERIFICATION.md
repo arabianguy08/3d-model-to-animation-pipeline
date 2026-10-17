@@ -2,10 +2,12 @@
 
 Verified on Windows x64, 2026-10-17. Results describe this release candidate;
 they are not a promise that arbitrary uploads will rig or animate automatically.
+Release 0.1.1. [Cross-platform CI run](https://github.com/arabianguy08/companion-animation-pipeline/actions/runs/39060721259).
 Machine-readable measurements: [verification-results.json](verification-results.json).
 
 | Check | Result |
 | --- | --- |
+| GitHub CI: Windows, macOS, Linux | 33 passed and 1 real-Blender skip on each OS; package builds passed |
 | Standard test discovery | 33 passed; 1 real-Blender test intentionally skipped |
 | Opt-in real Blender 4.5.3 regression test | Passed, including saved GLB reimport and cached resume |
 | Checksum-verified managed Blender download and extraction | Passed, actual Windows 4.5.3 portable binary |

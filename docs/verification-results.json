@@ -170,5 +170,17 @@
       572
     ],
     "review": "Encoded MP4 played in actual browser, no media error. All 64 chronological render frames inspected."
+  },
+  "release": "0.1.1",
+  "ci": {
+    "run": "https://github.com/arabianguy08/companion-animation-pipeline/actions/runs/39060721259",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "passed_per_platform": 33,
+    "skipped_per_platform": 1,
+    "builds": "pass"
   }
 }
