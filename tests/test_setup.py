@@ -88,7 +88,7 @@ class SetupTests(unittest.TestCase):
                                  skill_dir=self.root / "skills/companion-animation-pipeline")
         self.assertEqual(result["status"], "ready")
         server = json.loads((self.root / "project/companion-mcp.json").read_text())["mcpServers"]["companion-animation"]
-        self.assertEqual(server["env"]["COMPANION_ANIMATION_HOME"], str(self.root / "user data"))
+        self.assertEqual(server["env"]["COMPANION_ANIMATION_HOME"], str((self.root / "user data").resolve()))
         self.assertEqual(settings()["blender"], str(executable))
         self.assertTrue((Path(result["skill"]) / "SKILL.md").exists())
         self.assertEqual(blender_path(), executable)
