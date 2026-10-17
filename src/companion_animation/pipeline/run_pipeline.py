@@ -55,6 +55,8 @@ def digest(value):
 
 
 def pid_alive(pid):
+    if pid <= 0 or pid > (0xffffffff if os.name == 'nt' else 0x7fffffff):
+        return False
     if os.name == 'nt':
         import ctypes
         kernel = ctypes.WinDLL('kernel32', use_last_error=True)

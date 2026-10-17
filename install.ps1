@@ -3,7 +3,7 @@ param(
     [string]$Project = '.',
     [string]$Blender = '',
     [string]$SkillDir = '',
-    [string]$Source = 'https://github.com/arabianguy08/companion-animation-pipeline/archive/refs/tags/v0.1.0.zip',
+    [string]$Source = 'https://github.com/arabianguy08/companion-animation-pipeline/archive/refs/tags/v0.1.1.zip',
     [switch]$ManagedBlender,
     [switch]$NoSkill
 )

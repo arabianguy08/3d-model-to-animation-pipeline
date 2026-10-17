@@ -6,7 +6,7 @@ Machine-readable measurements: [verification-results.json](verification-results.
 
 | Check | Result |
 | --- | --- |
-| Standard test discovery | 32 passed; 1 real-Blender test intentionally skipped |
+| Standard test discovery | 33 passed; 1 real-Blender test intentionally skipped |
 | Opt-in real Blender 4.5.3 regression test | Passed, including saved GLB reimport and cached resume |
 | Checksum-verified managed Blender download and extraction | Passed, actual Windows 4.5.3 portable binary |
 | One-shot PowerShell bootstrap | Passed: downloaded uv 0.9.7 and managed Python 3.12.12, installed wheel, MCP dependencies, skill and generic connection |

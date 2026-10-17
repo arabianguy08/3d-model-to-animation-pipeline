@@ -40,7 +40,7 @@ def main(argv=None):
                 return 2
         return run_pipeline.main(argv)
     parser = argparse.ArgumentParser(description="Blender animation pipeline, local MCP tools, and one-command setup")
-    parser.add_argument("--version", action="version", version="0.1.0")
+    parser.add_argument("--version", action="version", version="0.1.1")
     commands = parser.add_subparsers(dest="command", required=True)
     for name, help_text in [("init", "Initialize an isolated model configuration"),
                             ("inspect", "Inspect the source model in Blender"),

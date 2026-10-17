@@ -191,6 +191,11 @@ class RunnerTests(unittest.TestCase):
         self.assertIn('export', result['cached'])
         self.assertIn('certify', result['cached'])
 
+    def test_pid_bounds_do_not_signal_process_groups_or_overflow(self):
+        self.assertTrue(pipeline.pid_alive(pipeline.os.getpid()))
+        for pid in (-1, 0, 2**64):
+            self.assertFalse(pipeline.pid_alive(pid))
+
     def test_stale_lock_and_running_state_resume(self):
         self.run_mocked('inspect')
         runner = pipeline.Runner(self.path)
