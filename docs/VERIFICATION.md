@@ -2,7 +2,7 @@
 
 Verified on Windows x64, 2026-10-17. Results describe this release candidate;
 they are not a promise that arbitrary uploads will rig or animate automatically.
-Release 0.1.1. [Cross-platform CI run](https://github.com/arabianguy08/companion-animation-pipeline/actions/runs/39060721259).
+Release 0.1.1. [Cross-platform CI run](https://github.com/arabianguy08/3d-model-to-animation-pipeline/actions/runs/39060721259).
 Machine-readable measurements: [verification-results.json](verification-results.json).
 
 | Check | Result |

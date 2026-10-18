@@ -1,6 +1,6 @@
-# Companion Animation Pipeline
+# 3D model to Animation pipeline
 
-[![Tests](https://github.com/arabianguy08/companion-animation-pipeline/actions/workflows/tests.yml/badge.svg)](https://github.com/arabianguy08/companion-animation-pipeline/actions/workflows/tests.yml)
+[![Tests](https://github.com/arabianguy08/3d-model-to-animation-pipeline/actions/workflows/tests.yml/badge.svg)](https://github.com/arabianguy08/3d-model-to-animation-pipeline/actions/workflows/tests.yml)
 
 **Inspect → calibrate → animate → export → verify → review → package.**
 
@@ -27,14 +27,14 @@ Blender add-on, Node.js, Git installation, API key, or subscription is required.
 ### Windows PowerShell
 
 ```powershell
-Invoke-RestMethod https://raw.githubusercontent.com/arabianguy08/companion-animation-pipeline/v0.1.1/install.ps1 -OutFile install.ps1
+Invoke-RestMethod https://raw.githubusercontent.com/arabianguy08/3d-model-to-animation-pipeline/v0.1.1/install.ps1 -OutFile install.ps1
 .\install.ps1 -Client codex
 ```
 
 ### macOS / Linux
 
 ```sh
-curl -LsSf https://raw.githubusercontent.com/arabianguy08/companion-animation-pipeline/v0.1.1/install.sh -o install.sh
+curl -LsSf https://raw.githubusercontent.com/arabianguy08/3d-model-to-animation-pipeline/v0.1.1/install.sh -o install.sh
 sh install.sh --client codex
 ```
 

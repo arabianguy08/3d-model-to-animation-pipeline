@@ -6,7 +6,7 @@ blender=
 skill_dir=
 managed=
 no_skill=
-source_url=https://github.com/arabianguy08/companion-animation-pipeline/archive/refs/tags/v0.1.1.zip
+source_url=https://github.com/arabianguy08/3d-model-to-animation-pipeline/archive/refs/tags/v0.1.1.zip
 while [ "$#" -gt 0 ]; do
     case "$1" in
         --client) client=$2; shift 2 ;;

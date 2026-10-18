@@ -52,7 +52,7 @@ does not bypass that product's execution or approval rules.
 ## Existing Python / offline installations
 
 ```sh
-python -m pip install https://github.com/arabianguy08/companion-animation-pipeline/archive/refs/tags/v0.1.1.zip
+python -m pip install https://github.com/arabianguy08/3d-model-to-animation-pipeline/archive/refs/tags/v0.1.1.zip
 companion-animation setup --client generic --blender /path/to/blender --no-download
 ```
 

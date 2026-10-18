@@ -17,8 +17,8 @@ showcase = ["pillow>=11", "imageio-ffmpeg>=0.6"]
 dev = ["build>=1.2", "pyyaml>=6"]
 
 [project.urls]
-Homepage = "https://github.com/arabianguy08/companion-animation-pipeline"
-Issues = "https://github.com/arabianguy08/companion-animation-pipeline/issues"
+Homepage = "https://github.com/arabianguy08/3d-model-to-animation-pipeline"
+Issues = "https://github.com/arabianguy08/3d-model-to-animation-pipeline/issues"
 
 [project.scripts]
 companion-animation = "companion_animation.cli:main"

@@ -173,7 +173,7 @@
   },
   "release": "0.1.1",
   "ci": {
-    "run": "https://github.com/arabianguy08/companion-animation-pipeline/actions/runs/39060721259",
+    "run": "https://github.com/arabianguy08/3d-model-to-animation-pipeline/actions/runs/39060721259",
     "platforms": [
       "Windows",
       "macOS",
