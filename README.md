@@ -75,6 +75,9 @@ Tell your agent:
 
 Then follow [the usage guide](docs/USAGE.md).
 
+For anatomical biped retargeting, skinned sole contact, append-only animation
+export and multi-view playback, see [the locomotion workflow](docs/LOCOMOTION.md).
+
 ## What is automated—and what needs judgment
 
 - Shared stages: inspection, job isolation, baking, GLB export, numerical checks,
@@ -91,7 +94,7 @@ Then follow [the usage guide](docs/USAGE.md).
 ## Developers
 
 ```sh
-python -m pip install .
+python -m pip install '.[dev]'
 python -m unittest discover -s tests -v
 python tests/test_pipeline.py --blender /path/to/blender BlenderTests -v
 ```

@@ -14,7 +14,8 @@ dependencies = ["mcp>=1.26,<2"]
 
 [project.optional-dependencies]
 showcase = ["pillow>=11", "imageio-ffmpeg>=0.6"]
-dev = ["build>=1.2", "pyyaml>=6"]
+dev = ["build>=1.2", "pyyaml>=6", "numpy>=1.26"]
+locomotion = ["numpy>=1.26"]
 
 [project.urls]
 Homepage = "https://github.com/arabianguy08/3d-model-to-animation-pipeline"
