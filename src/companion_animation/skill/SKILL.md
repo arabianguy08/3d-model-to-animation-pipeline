@@ -7,6 +7,11 @@ description: Inspect, rig, retarget, animate, export and verify 3D companions wi
 
 Use the installed `companion-animation` CLI or the `companion-animation` MCP server.
 Read [the workflow](references/workflow.md) for command and adapter details.
+Use [locomotion rules](references/locomotion-rules.md) for anatomical retargeting,
+skinned contact, append-only export and review. Run its independent QA in addition
+to the pipeline's export certification.
+
+"Any motion often causes micromovements across the body. Moving a hand isn't just the hand, but also how the rest of the body moves when that hand moves as well."
 
 - Run `environment_info`/`companion-animation doctor` first. If setup is missing,
   run `companion-animation setup` using the user's chosen client.

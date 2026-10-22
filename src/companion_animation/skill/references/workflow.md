@@ -50,3 +50,9 @@ The MCP tools are `environment_info`, `pipeline_init`, `pipeline_status`,
 `pipeline_run`, `blender_script`, `job_status`, `view_artifact`, `diagnose_stage`,
 and `record_review`. No other Blender MCP or Blender add-on is required. Any AI
 with local command execution can also operate the CLI without MCP support.
+# Locomotion extension
+
+For calibrated biped sources, follow [locomotion rules](locomotion-rules.md).
+The package provides `companion_animation.locomotion.configure`, motion/export
+adapters, independent saved-GLB QA and a moving-grid review renderer. Keep
+export-equivalence checks separate from gait quality and human approval.
